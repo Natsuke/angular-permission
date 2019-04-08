@@ -178,7 +178,7 @@
         // Overwrite notify option to broadcast it later
         var transitionOptions = angular.extend({}, PermTransitionProperties.options, {
           notify: false,
-          location: true
+          location: PermTransitionProperties.options.location ? PermTransitionProperties.options.location : true
         });
 
         $state
